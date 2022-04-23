@@ -25,19 +25,19 @@ const Header = styled.header`
 
 function App() {
   return (
-    <div>
+    <>
       <Header>
         <h1>RoadMap</h1>
       </Header>
       <GlobalStyles />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<RoadMap />}></Route>
-          <Route path="/category" element={<Category />}></Route>
-          <Route path="/category/javascript" element={<Detail />}></Route>
+          <Route path="/" element={<RoadMap/>}/>
+          <Route path="/category" element={<Category/>}/>
+          <Route path="/category/javascript" element={<Detail/>}/>
         </Routes>
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 

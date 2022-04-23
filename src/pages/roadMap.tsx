@@ -8,6 +8,7 @@ import { ReactComponent as Git } from "../assets/git.svg";
 import { ReactComponent as ReactImg } from "../assets/react.svg";
 import { ReactComponent as Typescript } from "../assets/typescript.svg";
 import { ReactComponent as Cooperation } from "../assets/cooperation.svg";
+import typescript from "../assets/typescript.svg";
 
 import RoadMapImg from "../components/RoadMapImg";
 
@@ -20,8 +21,8 @@ const TestBlock = styled.div`
 const Wrapper = styled.div``;
 
 const RoadMapWrapper = styled.div`
-  // display: flex;
-  // justify-content: center;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
 `;
 
@@ -50,6 +51,16 @@ const Img = styled.img`
   height: 100%;
 `;
 
+const TestWrapper = styled.div`
+    width: 100%;
+    display: flex;
+  justify-content: center;
+  text-align: center;
+    position: absolute;
+    left: 0;
+    top: 100px;
+`;
+
 function RoadMap() {
   const navigate = useNavigate();
 
@@ -63,16 +74,20 @@ function RoadMap() {
       <RoadMapWrapper>
         <RoadMapBase />
 
-        <JavscriptWrapper />
-        <GitWrapper />
-        <ReactWrapper />
-        <TypescriptWrapper />
-        <CooperationWrapper />
+        {/*<JavscriptWrapper />*/}
+        {/*<GitWrapper />*/}
+        {/*<ReactWrapper />*/}
+        {/*<TypescriptWrapper />*/}
+        {/*<CooperationWrapper />*/}
       </RoadMapWrapper>
       <IconWrapper>
         <HtmlCssWrapper />
       </IconWrapper>
-      <RoadMapImg />
+      <TestWrapper>
+        <RoadMapImg names={typescript} />
+        <RoadMapImg names={typescript} />
+        <RoadMapImg names={typescript} />
+      </TestWrapper>
     </Wrapper>
   );
 }
