@@ -44,13 +44,19 @@ const CategoryContainer = styled.div`
   line-height: 2.2rem;
 `;
 
+const Subscription = styled.p`
+  margin: 30px;
+  text-align: center;
+`
+
 function Category({ match }: any) {
   const { group } = useParams();
+  const [data, setData] = useState(null);
   const [bookList, setBookList] = useState([]);
   const [chk, setChk] = useState("");
 
   useEffect(() => {
-    fetch("https://frontend-master-library.vercel.app/data/bookMock.json", {})
+    fetch(window.location.origin + "/data/bookMock.json", {})
       .then((response) => response.json())
       .then((data) => {
         const entire = data.data;
@@ -62,12 +68,14 @@ function Category({ match }: any) {
             setChk(entire[i].group);
           }
         }
+        setData(data.data.find((value) => value.group === group));
       });
   }, [group]);
 
   return (
     <div>
       <CategoryContainer>{group}</CategoryContainer>
+      <Subscription>{data?.subscription}</Subscription>
       <Section>
         <GridContainer>
           {bookList.map((el) => (

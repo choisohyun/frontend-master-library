@@ -2,6 +2,7 @@
   "data": [
     {
       "group": "htmlcss",
+      "subscription": "웹페이지를 만들 때 기본적인 뼈대를 만드는 HTML과 CSS에 대한 추천도서입니다.",
       "bookList": [
         {
           "id": "1",
@@ -55,6 +56,7 @@
     },
     {
       "group": "git",
+      "subscription": "협업과 버전 관리를 위한 Git/Github에 대한 추천도서입니다.",
       "bookList": [
         {
           "id": "1",
@@ -156,6 +158,7 @@
     },
     {
       "group": "computerscience",
+      "subscription": "컴퓨터 과학에 대한 기초 지식을 알려주는 추천도서입니다.",
       "bookList": [
         {
           "id": "1",
@@ -257,6 +260,7 @@
     },
     {
       "group": "javascript",
+      "subscription": "웹페이지가 사용자가 반응에 의해 동작하도록 만드는 자바스크립트에 대한 추천도서입니다.",
       "bookList": [
         {
           "id": "1",
@@ -358,6 +362,7 @@
     },
     {
       "group": "typescript",
+      "subscription": "자바스크립트의 슈퍼셋으로, 타입이 유연한 자바스크립트에 타입을 부여하는 타입스크립트의 추천도서입니다.",
       "bookList": [
         {
           "id": "1",
@@ -411,6 +416,7 @@
     },
     {
       "group": "react",
+      "subscription": "가상 돔으로 이루어져 개발자가 로직에 더 신경쓸 수 있게 해주는 라이브러리인 리액트의 추천도서입니다.",
       "bookList": [
         {
           "id": "1",
@@ -512,6 +518,7 @@
     },
     {
       "group": "cooperation",
+      "subscription": "",
       "bookList": [
         {
           "id": "1",
